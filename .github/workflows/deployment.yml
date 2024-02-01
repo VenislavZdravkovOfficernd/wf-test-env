@@ -48,7 +48,7 @@ jobs:
             - name: Install dependencies 
               run: yarn install
             - name: Build code
-              run: yarn build
+              run: yarn start
             - name: Publish JS filename
               id: publish
               run: find dist/assets/ *js -type f -execdir echo 'script-file={}' >> $GITHUB_OUTPUT ';' 
