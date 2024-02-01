@@ -22,6 +22,8 @@ jobs:
                   ${{ runner.os }}-yarn-
             - name: Install dependencies 
               run: yarn install
+            - name: install playwright
+              run: yarn playwright install
             - name: Test code
               run: yarn test
     build: 
